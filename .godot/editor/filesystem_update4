@@ -1,0 +1,4 @@
+res://Scenes/main.tscn
+res://Scripts/Player.gd
+res://tile_set.tres
+res://Scenes/player.tscn
