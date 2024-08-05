@@ -2,3 +2,7 @@ res://Scenes/main.tscn
 res://Scripts/Player.gd
 res://tile_set.tres
 res://Scenes/player.tscn
+res://Scenes/enemy.gd
+res://Scenes/enemy.tscn
+res://spikes.gd
+res://Scenes/spikes.tscn
