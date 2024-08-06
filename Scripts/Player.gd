@@ -16,21 +16,27 @@ func _ready():
 	score_text.text = str("COINS: 0/",totalCoins)
 	
 func _process(delta):
-	pass
+	if velocity.x!=0 and is_on_floor():
+		$AnimatedSprite2D.play("walking")
+	elif velocity.x==0 and is_on_floor():
+		$AnimatedSprite2D.set_frame_and_progress(1,0)
+	else:
+		$AnimatedSprite2D.set_frame_and_progress(0,0)
 	
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity*delta
 	
 	velocity.x=0
-	var scale=snappedf($".".scale.x, .01)
+	
 	if Input.is_key_pressed(KEY_LEFT):
 		velocity.x -= moveSpeed
-		$Sprite2D.scale.x=1.0
+		$AnimatedSprite2D.scale.x=1.0
+	
 
 	if Input.is_key_pressed(KEY_RIGHT):
 		velocity.x += moveSpeed
-		$Sprite2D.scale.x=-1.0
+		$AnimatedSprite2D.scale.x=-1.0
 
 	if Input.is_key_pressed(KEY_SPACE) and is_on_floor():
 		velocity.y = -jumpForce
