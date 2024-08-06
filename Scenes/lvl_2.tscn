@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://bp2q8pvo624o8"]
+
+[ext_resource type="TileSet" uid="uid://dd5vgba8m3q7g" path="res://tile_set.tres" id="1_jn4fa"]
+[ext_resource type="PackedScene" uid="uid://ha2yqecb138k" path="res://Scenes/player.tscn" id="2_cph2q"]
+[ext_resource type="PackedScene" uid="uid://cwnj273srcig4" path="res://Scenes/enemy.tscn" id="3_klyjq"]
+[ext_resource type="PackedScene" uid="uid://br4begxtgyktb" path="res://Scenes/coin.tscn" id="4_fjcg1"]
+[ext_resource type="PackedScene" uid="uid://bfnoc7bx2r6ni" path="res://Scenes/flag.tscn" id="5_stpe4"]
+[ext_resource type="PackedScene" uid="uid://cdx8jcgaebebh" path="res://Scenes/spikes.tscn" id="6_50au5"]
+
+[node name="Lvl2" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_jn4fa")
+format = 2
+layer_0/tile_data = PackedInt32Array(-9, 1114112, 0, 65527, 1114112, 1, 131063, 1114112, 2, -8, 1179648, 0, 65528, 1179648, 1, 131064, 1179648, 2, -7, 1245184, 0, 65529, 1245184, 1, 131065, 1245184, 2, -262149, 1179648, 2, -196613, 1114112, 1, -131077, 1114112, 2, -262148, 1245184, 2, -196612, 1179648, 1, -131076, 1179648, 2, -262147, 1114112, 1, -196611, 1114112, 2, -131075, 1245184, 2, -327683, 1114112, 1, -327682, 1048576, 0, -262146, 1179648, 1, -196610, 1179648, 2, -327681, 1179648, 1, -262145, 1179648, 1, -196609, 1179648, 2, -393222, 1114112, 0, -327686, 1114112, 1, -262150, 1114112, 2, -393221, 1179648, 0, -327685, 1179648, 1, -393220, 1245184, 0, -327684, 1245184, 1, -393219, 1114112, 1, -393218, 1179648, 1, -393217, 1179648, 1, -458755, 1114112, 0, -458754, 1179648, 0, -458753, 1179648, 0, -524288, 1179648, 0, -458752, 1179648, 1, -524287, 1245184, 0, -458751, 1245184, 1, -393216, 1179648, 1, -393215, 1245184, 1, -327680, 1179648, 1, -327679, 1245184, 1, -262143, 1245184, 2, -262144, 1179648, 2, -131073, 1114112, 5, -65540, 1114112, 5, 196600, 1114112, 5, -65537, 1114112, 5, -1, 1048576, 4, 65535, 1048576, 4, 131071, 1048576, 5, 196607, 1179648, 6, -4, 1179648, 6, 65532, 1179648, 6, 131068, 1048576, 5, 196604, 1048576, 6, 262140, 1048576, 4, 262143, 1048576, 4, 262136, 1179648, 6, 327672, 1114112, 6, 327676, 1114112, 6, 327679, 1114112, 6, 196603, 1179648, 5, 65533, 1245184, 5, 65534, 1245184, 4, -3, 1245184, 6, -196608, 1245184, 6, -131074, 1179648, 4, -131072, 1245184, 4, -131071, 1245184, 4, -131070, 1245184, 4, -131069, 1245184, 4, -65538, 1245184, 5, 131072, 1245184, 4, 131073, 1245184, 4, 131074, 1245184, 4, 131075, 1245184, 5, -65541, 1245184, 5, -65542, 1245184, 4, -65543, 1245184, 5, 196599, 1245184, 5, 196598, 1245184, 4, 196597, 1245184, 4, 262137, 1245184, 5, -65544, 1048576, 0, 196596, 1179648, 5, -65539, 1179648, 4, 131076, 1245184, 6, -131068, 1245184, 6, -196614, 1048576, 0, -262151, 1048576, 0, -131079, 1048576, 0, -131080, 1048576, 0, 65526, 1048576, 0, 0, 1245184, 6, 262138, 1245184, 6, 196601, 1245184, 6, 65539, 1179648, 5, 65540, 1245184, 4, -65531, 1048576, 0, 65541, 1245184, 4, -131066, 1114112, 1, -65530, 1114112, 1, 6, 1114112, 2, 65542, 1245184, 5, -131065, 1179648, 1, -65529, 1179648, 1, 7, 1179648, 2, 65543, 1114112, 5, 131079, 1179648, 6, -131064, 1245184, 1, -65528, 1245184, 1, 8, 1245184, 2, 65544, 1245184, 6, 131080, 1245184, 5, 131081, 1245184, 4, 262151, 1114112, 6, 196615, 1048576, 4, -196602, 1114112, 0, -196601, 1179648, 0, -196600, 1245184, 0, 131082, 1245184, 6, 393212, 131072, 0, 393213, 131072, 0, 393214, 131072, 0, 393215, 131072, 0, 327681, 196608, 0, 327680, 131072, 0, 393208, 131072, 0, 393209, 196608, 0, 393207, 65536, 0, 327687, 131072, 0, 327688, 131072, 0, 327689, 196608, 0, 327686, 131072, 0, 327685, 65536, 0, 393211, 65536, 0)
+
+[node name="Player" parent="." instance=ExtResource("2_cph2q")]
+position = Vector2(-136, -60)
+
+[node name="Enemy" parent="." instance=ExtResource("3_klyjq")]
+position = Vector2(82, -78)
+moveDir = Vector2(0, 100)
+
+[node name="Enemy4" parent="." instance=ExtResource("3_klyjq")]
+position = Vector2(44, 68)
+moveSpeed = 50.0
+moveDir = Vector2(0, -80)
+
+[node name="Enemy2" parent="." instance=ExtResource("3_klyjq")]
+position = Vector2(-186, 26)
+moveSpeed = 50.0
+moveDir = Vector2(-75, 0)
+
+[node name="Coin" parent="." instance=ExtResource("4_fjcg1")]
+position = Vector2(-169, 24)
+
+[node name="Coin2" parent="." instance=ExtResource("4_fjcg1")]
+position = Vector2(-95, -137)
+
+[node name="Coin3" parent="." instance=ExtResource("4_fjcg1")]
+position = Vector2(-70, -137)
+
+[node name="Coin6" parent="." instance=ExtResource("4_fjcg1")]
+position = Vector2(30, -44)
+
+[node name="Coin4" parent="." instance=ExtResource("4_fjcg1")]
+position = Vector2(23, 25)
+
+[node name="Coin5" parent="." instance=ExtResource("4_fjcg1")]
+position = Vector2(49, 25)
+
+[node name="Enemy3" parent="." instance=ExtResource("3_klyjq")]
+position = Vector2(27, -158)
+moveSpeed = 50.0
+moveDir = Vector2(-100, 0)
+
+[node name="Flag" parent="." instance=ExtResource("5_stpe4")]
+position = Vector2(181, 30)
+next_scene = "res://Scenes/main.tscn"
+
+[node name="Spikes" parent="." instance=ExtResource("6_50au5")]
+position = Vector2(141, -62)
+
+[node name="Spikes2" parent="." instance=ExtResource("6_50au5")]
+position = Vector2(-11, -151)
+
+[connection signal="maxCoin" from="Player" to="Flag" method="_on_player_max_coin"]

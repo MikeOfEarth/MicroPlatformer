@@ -1,8 +1,12 @@
 res://Scenes/main.tscn
-res://Scripts/Player.gd
 res://tile_set.tres
 res://Scenes/player.tscn
-res://Scenes/enemy.gd
 res://Scenes/enemy.tscn
-res://spikes.gd
 res://Scenes/spikes.tscn
+res://Scripts/Player.gd
+res://Scripts/Coin.gd
+res://Scenes/flag.tscn
+res://Scripts/flag.gd
+res://Scenes/lvl_2.tscn
+res://Scenes/coin.tscn
+res://Scripts/enemy.gd
